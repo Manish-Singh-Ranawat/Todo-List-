@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Web-App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>To-Do List <img src="images/icon.png" class="logo-image" /></h1>
+      <div class="task-head">
+        <h2>Tasks</h2>
+        <button class="add-task-btn">Add Task</button>
+      </div>
+    </header>
+    <div class="form-container hide">
+      <form name="form">
+          <label for="form-input">Task</label>
+          <input
+          required
+            id="form-input"
+            type="text"
+            placeholder="What do you have planned?"
+          />
+        <label for="form-priority"
+          >Priority
+          <select id="form-priority" class="form-priority">
+            <option value="None">None</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </label>
+        <label for="form-date"
+          >Due-Date
+          <input type="date" id="form-date" class="form-date"/>
+        </label>
+        <label for="form-textarea">Details</label>
+        <textarea class="textarea" id="form-textarea"> </textarea>
+        <div class="form-button-container">
+          <button class="form-cancel form-button" >
+           Cancel
+          </button>
+          <button class="form-button form-reset">
+            Reset
+          </button>
+          <button type="submit" class="form-submit form-button" >
+            Add
+          </button>
+        </div>
+      </form>
+    </div>
+
+     <main> 
+       <div class="task-list">
+            <!-- <div class="task"> 
+               <div class="task-content">
+                <input type="checkbox" class="checkbox"
+                name="checkbox" />
+                <input
+                  type="text"
+                  class="task-name"
+                  placeholder="Sleep"
+                  name="task-name"
+                />
+                <div class="task-buttons-container">
+                  <button class="edit-button task-buttons">Edit</button>
+                  <button class="delete-button task-buttons">Delete</button>
+                </div>
+              </div>
+              <div class="task-detail">
+                <div class="task-priority-container">
+                  <span>Priority : Low</span>
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <div class="task-date-container">
+                  <span>Due-Date : 30/13/2004</i></span>
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+              </div>
+                <details>
+              <textarea class="task-detail-text textarea" readonly>hello Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi enim aspernatur aliquid maxime repellat dolores numquam rerum corporis necessitatibus, repudiandae in quae itaque, adipisci, cum quisquam vitae alias praesentium?
+              </textarea>
+            </details>
+
+              </div> -->
+
+          <!-- <div class="task">
+              <div class="task-content">
+                <input type="checkbox" class="checkbox checked" />
+                <input
+                  type="text"
+                  class="task-input"
+                  placeholder="Sleep"
+                  readonly
+                />
+                <div class="task-buttons-container">
+                  <button class="edit-button task-buttons">Edit</button>
+                  <button class="delete-button task-buttons">Delete</button>
+                </div>
+              </div>
+            <div class="task-detail">
+              <div class="task-detail-head">
+                <span>Priority : Low</span>
+                <span>Due-Date : 30/13/2004</span>
+                </div>
+                <Details>
+              <div class="task-detail-text">
+                hello Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi enim aspernatur aliquid maxime repellat dolores numquam rerum corporis necessitatibus, repudiandae in quae itaque, adipisci, cum quisquam vitae alias praesentium?
+              </div>
+            </Details>
+
+              </div>
+          </div> -->
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
